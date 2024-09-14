@@ -8,6 +8,7 @@ import android.view.MotionEvent
 import android.view.View
 import android.webkit.WebView
 import android.widget.FrameLayout
+import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.ach.ramppaysdk.R
@@ -45,7 +46,7 @@ class BottomSheetFragment(context: Context, private val webView: WebView) :
                 }
             })
 
-
+            it.background = ContextCompat.getDrawable(context, R.drawable.button_while_r8)
             window?.setBackgroundDrawableResource(android.R.color.transparent)
 
             it.post {

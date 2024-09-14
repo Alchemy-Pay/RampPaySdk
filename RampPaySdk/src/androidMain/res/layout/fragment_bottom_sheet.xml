@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/button_while_r8">
+
+
+    <RelativeLayout
+        android:id="@+id/drag_handle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp">
+
+        <View
+            android:id="@+id/dragHandle"
+            android:layout_width="48dp"
+            android:layout_height="4dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/handle_shape" />
+
+        <TextView
+            android:id="@+id/tv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-medium"
+            android:paddingEnd="16dp"
+            android:text="Close"
+            android:textColor="#0059DA"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+    <!-- 顶部手柄，用于拖拽 -->
+
+    <!-- 选项1 -->
+
+
+        <FrameLayout
+            android:id="@+id/ll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"/>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

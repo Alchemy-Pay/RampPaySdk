@@ -1,0 +1,24 @@
+{
+  "object" : {
+    "artifacts" : [
+      {
+        "kind" : "xcframework",
+        "packageRef" : {
+          "identity" : "ramppay-sdk-ios-android",
+          "kind" : "root",
+          "location" : "/Users/houhaoxuan/Documents/GitAndroidWork/RampPay-Sdk-Ios-Android",
+          "name" : "RampPay-Sdk-Ios-Android"
+        },
+        "path" : "/Users/houhaoxuan/Documents/GitAndroidWork/RampPay-Sdk-Ios-Android/RampPaySdk.xcframework",
+        "source" : {
+          "type" : "local"
+        },
+        "targetName" : "RampPaySdk"
+      }
+    ],
+    "dependencies" : [
+
+    ]
+  },
+  "version" : 6
+}

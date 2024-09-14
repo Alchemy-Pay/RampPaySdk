@@ -2,7 +2,6 @@ plugins {
     id("maven-publish")
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.androidLibrary)
-    id("org.jetbrains.kotlin.native.cocoapods")
 }
 
 group = "com.github.Alchemy-Pay"
@@ -30,16 +29,6 @@ kotlin {
         }
     }
 
-    cocoapods {
-        summary = "Kotlin Multiplatform SDK for RampPay"
-        homepage = "https://github.com/Alchemy-Pay/RampPay-Sdk"
-        version = project.version.toString() // 这里是你想发布的版本号
-        ios.deploymentTarget = "14.0"  // 目标 iOS 版本
-        framework {
-            baseName = "RampPaySdk"
-            isStatic = true  // 如果你需要静态框架
-        }
-    }
 
     sourceSets {
         commonMain.dependencies {

@@ -1,8 +1,0 @@
-framework module "RampPaySdk" {
-    umbrella header "RampPaySdk.h"
-
-    export *
-    module * { export * }
-
-    use Foundation
-}
